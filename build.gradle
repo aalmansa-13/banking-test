@@ -23,3 +23,9 @@ dependencies {
     testRuntime "cglib:cglib-nodep:3.2.4"
     testRuntime "org.objenesis:objenesis:2.1"
 }
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
